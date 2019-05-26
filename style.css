@@ -1,0 +1,405 @@
+@font-face {
+	font-family: dincondensedc;
+	src: url(fonts/dincondensedc.ttf);
+}
+
+body {
+	margin: 0;
+}
+h1 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 40px;
+}
+
+h2 {
+	font-family: 'dincondensedc';
+	margin-bottom: 0px;
+	font-size: 30px;
+}
+h3 {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 20px;
+}
+p {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+}
+hr {
+	height: 6px;
+	background: url(img/hr-1.png) repeat-x 0 0;
+	border: 0;
+}
+.layout {
+	margin-top: 32px;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.content {
+	float: left;
+	width: 723px;
+}
+
+.sidebar {
+	float: left;
+	width: 240px;
+	margin-left: 20px;
+}
+
+.clear {
+	clear: left;
+}
+
+/*-----------------header------------------*/
+.authentication {
+	-moz-box-shadow: 0 0 5px #e6e6e6;
+	-webkit-box-shadow: 0 0 5px #e6e6e6;
+	box-shadow: 0 0 5px #e6e6e6;
+	width: 364px;
+	height: 40px;
+	margin-left: 148px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+}
+.authentication ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 14px;
+	padding-top: 10px;
+}
+
+.authentication li {
+	display: inline-block; 
+	margin-right:12px;
+}
+.authentication a {
+	color: black;
+}
+#logo {
+	float: left;
+}
+
+#lock {
+	float: left;
+	padding-right: 12px;
+	padding-top: 10px;
+	padding-left: 14px;
+}
+.nav {
+	margin-top: 30px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px;
+}
+
+.nav ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 12px; 
+	margin-left: 148px;
+}
+
+.nav li {
+	display: inline-block; 
+	margin-right:30px; 
+}
+.nav a {
+	color: black;
+}
+
+/*-------------Main Film-------------------*/
+.mainfilm {
+	margin-left: -12px;
+}
+
+#film_description {
+	width: 590px;
+	margin-top: 100px;
+	margin-left: 106px;
+}
+#film_cinema {
+	margin-bottom: 0px;
+}
+#main_cinema {
+	color: black;
+	text-decoration: none;
+	border-bottom: 2px dashed black;
+}
+#main_cinema:hover {
+	color: red;
+	border-bottom: 2px dashed red;
+}
+ 
+#main_cinema:focus {
+	color: black;
+	border-bottom: 2px dashed black;
+}
+#film_name {
+	margin-top: 0px;
+	margin-bottom: -12px;
+}
+#lenta {
+	position: absolute;
+	margin-top: -75px;
+}
+#lenta_data {
+	position: absolute;
+	margin-top: -23px;
+	margin-left: 26px;
+	margin-bottom: 80px;
+	font-size: 20px;
+	color: white;
+}
+#share {
+	margin-left: 18px;
+}
+/*------------events & diary---------------*/
+
+.events { 
+	overflow: hidden;
+	padding-left: 27px;
+}
+.events .Film1, .Film2, .Film3 {
+	float: left;
+	width: 200px;
+}
+.diary { 
+	overflow: hidden;
+	padding-left: 27px;
+}
+.diary .Film1, .Film2, .Film3 { 
+	float: left;
+	width: 200px;
+}
+
+.Film1, .Film2 {
+    margin-right: 38px;
+}
+.date {
+	font-size: 17px;
+}
+.day {
+	background-color: black;
+	color: white;
+}
+.cinema {
+	font-size: 13px;
+}
+.description {
+	font-size: 14px;
+}
+
+.nounderline {
+	color: black;
+	text-decoration: none;
+}
+
+.nounderline:hover {
+	text-decoration: underline;
+	color: black;
+}
+ 
+.nounderline:focus {
+	outline: underline;
+	color: black;
+}
+
+.nounderline_cinema {
+	color: black;
+}
+
+.nounderline_cinema:hover {
+	text-decoration: underline;
+	color: red;
+}
+ 
+.nounderline_cinema:focus {
+	outline: underline;
+	color: red;
+}
+.more {
+ 	text-align: right;
+}
+/*-----------Bottom-Go---------------------*/
+.label {
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.label-text {
+	margin-left: 8px;
+	font-size: 12px;
+	color: gray;
+}
+
+.toggle {
+	isolation: isolate;
+	position: relative;
+	height: 18px;
+	width: 40px;
+	border-radius: 15px;
+	background: black;
+	overflow: hidden;
+}
+
+.toggle-inner {
+	z-index: 2;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	height: 15.8px;
+	width: 37px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.active-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 200%;
+	background: black;
+	transform: translate3d(-100%, 0, 0);
+	transition: transform 0.05s linear 0.17s;
+}
+
+.toggle-state {
+	display: none;
+}
+
+.indicator {
+	height: 100%;
+	width: 200%;
+	background: white;
+	border-radius: 13px;
+	transform: translate3d(-75%, 0, 0);
+	transition: transform 0.35s cubic-bezier(0.85, 0.05, 0.18, 1.35);
+}
+
+.toggle-state:checked ~ .active-bg {
+	transform: translate3d(-50%, 0, 0);
+}
+
+.toggle-state:checked ~ .toggle-inner .indicator {
+	transform: translate3d(25%, 0, 0);
+}
+/*----------------sidebar------------------*/
+.partners {
+	text-align: center;
+	margin-top: 64px;
+}
+.partners h3 {
+	font-family: 'dincondensedc';
+	font-size: 20px;
+}
+.calendar {
+	margin-top: 105px;
+}
+#facebook {
+	margin-top: 35px;
+}
+
+/*--------------search-------------------*/
+form {
+	position: relative;
+	width: 240px;
+	margin: 0 auto;
+	background: #e4e4e4;
+}
+input, button {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+input {
+	width: 100%;
+	height: 29px;
+	padding-left: 15px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+}
+button {
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: 4px;
+	right: 14px;
+	cursor: pointer;
+}
+
+/*-------footer------------------------*/
+#footer {
+	color: white;
+	background: black;
+	height: 186px;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+}
+#footer p {
+	margin-left: 127px;
+}
+
+/*--------calendar----------------------*/
+.calendar {
+	margin-top: 105px;
+}
+
+#calendar_event {
+	font-family:'dincondensedc';
+	font-size: 18px;
+}
+
+#calendar_event span {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+}
+.calendar ul {
+	list-style-type: none;
+}
+.month {
+	text-align: center;
+}
+
+.month ul {
+	margin: 0;
+	padding: 0;
+}
+
+.month .prev {
+	float: left;
+	padding-top: 10px;
+}
+
+.month .next {
+	float: right;
+	padding-top: 10px;
+}
+
+.days {
+	padding: 10px 0;
+	margin: 0;
+}
+
+.days li {
+	border-radius: 2.5em;
+	border-style: solid;
+	border-color: #e4e4e4;
+	list-style-type: none;
+	display: inline-block;
+	width: 11%;
+	height: 23px;
+	text-align: center;
+	margin-bottom: 5px;
+	padding-top: 4px;
+	background: #e4e4e4;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+}
+.days .null {
+	border-color: white;
+	background:white;
+}
+.days .active {
+	border-color: black;
+}
